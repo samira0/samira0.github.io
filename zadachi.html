@@ -1,86 +1,69 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
-<head>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-  <style>
-      BODY {
-      align-items: center;
-      justify-content: center;
-      background: white;
-      font-family: Georgia;
-    }
-    
-    H1 {
-      font-size: 30px;
-      font-weight: normal;
-      cursor: pointer;
-      text-shadow: 0 0 15px #999;
-      color: transparent;
-      transition: all .5s;
-    }
-    
-    H1:hover {
-      text-shadow: 0 0 0px #333;
-      cursor: pointer;
-    }
-    
-    {
-  </style>
-  <script>
-    function func1() {
-      var a;
-      a = Number(document.getElementById("a_znach").value);
-      document.getElementById("kont_a").innerHTML = "<h1>" + "Периметр" + "<br>" + a * 4 + "</h1>";
-    }
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+    BODY {
+  align-items: center;
+  justify-content: center;
+  background: white;
+  font-family: Georgia;
+  }
 
-    function func2() {
-      var r;
-      r = Number(document.getElementById("b_znach").value);
-      document.getElementById("b").innerHTML = "<h1>" + "Диаметр" + "<br>" + r * 2 + "</h1>";
-      
-    function func3() {
-  var g;
-   g=Number(document.getElementyById("g_znach").value);
-   var eee = Math.sqrt(6350*6350)(g*g));
-   document.getElementyById("g").innerHTML ="<h1>"+"длина до горизонта"+"<br>"+ eee"</h1>";
+H1 {
+  font-size: 30px;
+  font-weight: normal;
+  cursor: pointer;
+  text-shadow: 0 0 15px #999;
+  color: transparent;
+  transition: all .5s;
+  }
+  H1:hover {
+    text-shadow: 0 0 0px #333;
+    cursor: pointer;
     }
-    
-    function func4(){
-  var k;
-  k=Number(document.getElementById("k_znach").value);
-  var 1 =k*k ;
-  document.getElementById("k").innerHTML ="<h1>"+"площадь"+"<br>"+ 1+"</h1>";
-  1 =k*k*k;
-   document.getElementById("k").innerHTML =document.getElementById("k").innerHTML +"<h1>"
-     }
-  </script>
-</head>
-<body>
-  <h1>Задача 1.25</h1> Сторона квадрата a=
-  <input type="text" value="0" id="a_znach">
-  <button onclick="func1()">1.25</button>
+  {
+   </style>
+ <script> 
+ function func1(){ 
+ var a;
+ a=Number(document.getElementById("a_znach").value);
+ var b = (a-(a%10))/10
+ document.getElementById("kont_a").innerHTML ="<h1>"+"десятки"+"<br>"+ b+"</h1>";
+ var c = a%10
+  document.getElementById("kont_a").innerHTML = document.getElementById("kont_a").innerHTML +"<h1>"+"единицы"+"<br>"+ c+"</h1>";
+    document.getElementById("kont_a").innerHTML = document.getElementById("kont_a").innerHTML +"<h1>"+"сумма"+"<br>"+ (c+b)+"</h1>"; 
+    document.getElementById("kont_a").innerHTML = document.getElementById("kont_a").innerHTML +"<h1>"+"произведение"+"<br>"+ (c*b)+"</h1>";
+ }
+  function func2(){ 
+ var e;
+ e=Number(document.getElementById("e_znach").value);
+ var b = ((e%100)-(e%10))/10
+ document.getElementById("kont_e").innerHTML ="<h1>"+"десятки"+"<br>"+ b +"</h1>";
+ var c = (e%10)
+
+  document.getElementById("kont_e").innerHTML = document.getElementById("kont_e").innerHTML +"<h1>"+"единицы"+"<br>"+ c+"</h1>";
+    document.getElementById("kont_e").innerHTML = document.getElementById("kont_e").innerHTML +"<h1>"+"сумма"+"<br>"+ (c+b)+"</h1>"; 
+    document.getElementById("kont_e").innerHTML = document.getElementById("kont_e").innerHTML +"<h1>"+"произведение"+"<br>"+ (c*b)+"</h1>";
+ }
+ 
+ </script>
+ </head>
+ <body>
+  <h1>Задача 2.10</h1>
+  двузначное число a=<input type="text" value="34" id="a_znach">
+  <button onclick="func1()">2.10</button>
   <div id="kont_a"></div>
-
-
-  <h1>Задача 1.26</h1> Радиус r=
-  <input type="text" value="0" id="b_znach">
-  <button onclick="func2()">1.27</button>
-  <div id="kont_c"></div>
-
-
-  <h1>Задача 1.27</h1>
-  Высота над землёй =
-  <input type="text" value="0" id="g_znach">
-  <button onclick="func3()">1.27</button>
-  <div id="kont_g"></div>
-
-
- <h1>Задача 1.28</h1>
-  Ребро куба 1=<input type="text" value="0" id="d_znach">
-  <button onclick="func4()">1.28</button>
-  <div id="kont_d"></div>
+  <h1>Задача 2.12</h1>
+  трехзначное число a=<input type="text" value="282" id="e_znach">
+  <button onclick="func2()">2.12</button>
+  <div id="kont_e"></div>
   
-    </body>
+  </body> 
  </html>
+ 
+ 
+ 
+ 
