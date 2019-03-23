@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+<title>canvasExample</title>
+<meta charset='utf-8' />
+<link href="style.css" rel="stylesheet">
+<script>
+function er1() {
+var x1 = Number(document.getElementById("x1_znach").value);
+var y1 = Number(document.getElementById("y1_znach").value);
+var x2 = Number(document.getElementById("x2_znach").value);
+var y2 = Number(document.getElementById("y2_znach").value);
+var x3 = Number(document.getElementById("x3_znach").value);
+var y3 = Number(document.getElementById("y3_znach").value);
+var x4 = Number(document.getElementById("x4_znach").value);
+var y4 = Number(document.getElementById("y4_znach").value);
+
+var xmin = x1
+if (xmin > x3) {
+xmin = x3
+}
+
+var ymin = y1
+if (ymin > y3) {
+ymin = y3
+}
+
+var xmax = x4
+if (xmax < x2) {
+xmax = x2
+}
+var ymax = y4
+if (ymax < y2) {
+ymax = y2
+}
+document.getElementById("otvet").innerHTML = "koor lev nizhn" + xmin +" "+ymin +"<br>"+"koor prav verkh" + xmax +" "+ymax +"<br>";
+}
+</script>
+</head>
+
+<body>
+x1
+<input type="text" value="1" id="x1_znach"> y1
+<input type="text" value="2" id="y1_znach">
+<br> x2
+<input type="text" value="3" id="x2_znach"> y2
+<input type="text" value="4" id="y2_znach">
+<br>x3
+<input type="text" value="5" id="x3_znach"> y3
+<input type="text" value="6" id="y3_znach">
+<br>x4
+<input type="text" value="7" id="x4_znach"> y4
+<input type="text" value="8" id="y4_znach">
+<br>
+
+<div class="container">
+<a href="#" class="button instagram" onclick="er1()"><span><i class="icon-instagram"></i></span><p>apple</p></a></div>
+
+<br>
+
+<br>
+
+<div id="otvet"></div>
+</body>
+
+</html>
+ 
+Ещё
