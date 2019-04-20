@@ -1,0 +1,85 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+     
+function func1() { 
+var i = 2; n = 3; sum = 0; 
+while (i < 11) { 
+sum = sum + i/n 
+i = i + 1 
+n = n + 1 
+document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + sum + " "; 
+} 
+} 
+
+function func2() { 
+n = Number(document.getElementById("n_f2_znach").value); 
+var i = 1; x = 1; sum = 0; 
+while (x < n+1) { 
+sum = sum + i/x 
+x = x + 1 
+document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + sum + " "; 
+} 
+} 
+
+function func3() {
+var n = Number(document.getElementById("a_f3_znach").value);
+var s = 0;
+var i=n;
+while (i <= 2*n) {
+s=s+i*i;
+document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + i*i +" "+s + "<br> ";
+i++;
+}}
+
+function func4() { 
+
+n = Number(document.getElementById("n_f4_znach").value); 
+var i = 1; x = 1; sum = 0; 
+while (i < 8) { 
+sum = sum + 1/x 
+x = x*3 
+document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML + sum + " ";
+i++ 
+} 
+} 
+</script> 
+</head> 
+
+<body> 
+
+<br> 
+<h1>5.33</h1> 
+<input type="text" value="6" id="n_f1_znach"> 
+<a href="#" onclick="func1()" class="button red text-blanco text-shadow-negra">5.33</a> 
+<div id="otvet1"></div> 
+<br> 
+<br> 
+<br> 
+<br> 
+<h1>5.32</h1> n= 
+<input type="text" value="6" id="n_f2_znach"> 
+<a href="#" onclick="func2()" class="button yellow text-blanco text-shadow-negra">5.32</a> 
+<div id="otvet2"></div> 
+<br> 
+<br> 
+<br> 
+<br> 
+<h1>5.31</h1> n=
+<input type="text" value="6" id="a_f3_znach">
+<a href="#" onclick="func3()" class="button red text-blanco text-shadow-negra">5.31</a>
+<div id="otvet3"></div>
+<br>
+<br>
+<h1>5.34</h1> n= 
+<input type="text" value="6" id="n_f4_znach"> 
+<a href="#" onclick="func4()" class="button yellow text-blanco text-shadow-negra">5.34</a> 
+<div id="otvet4"></div> 
+<br> 
+<br> 
+<br> 
+<br> 
+<br>
+<br>
