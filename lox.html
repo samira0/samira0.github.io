@@ -1,0 +1,77 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function func1() {
+      var n= Number(prompt('Введите n', 69));
+      var i = 0
+      while (n) {
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i + " ";
+        i++;
+      }
+    }
+
+    function func2() {
+      n = Number(document.getElementById("n_f2_znach").value);
+      var i = 0;
+      do {
+        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i + " ";
+        i++;
+      } while (i < n);
+    }
+
+    function func3() {
+      n = Number(document.getElementById("n_f3_znach").value);
+      var i;
+      for (i = 0; i < n; i++) {
+        document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + i + " ";
+      }
+
+    }
+    function func4() { 
+
+var i = 1
+while(i!= 0){ 
+
+ i = prompt('Введите n', 69);
+document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML + i + " "; 
+}} 
+  </script>
+</head>
+
+<body>
+
+
+  <h1>Цикл while!</h1> 
+  <a href="#" onclick="func1()" class="button red text-blanco text-shadow-negra">♥</a>
+  <div id="otvet1"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>Цикл Do while</h1> n=
+  <input type="text" value="6" id="n_f2_znach">
+  <a href="#" onclick="func2()" class="button yellow text-blanco text-shadow-negra">♂</a>
+  <div id="otvet2"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>Цикл for</h1> n=
+  <input type="text" value="9" id="n_f3_znach">
+  <a href="#" onclick="func3()" class="button green text-blanco text-shadow-negra">♀</a>
+  <div id="otvet3"></div>
+<br>
+  <br>
+  <br>
+  <br>
+<h1>5.27в</h1>
+<a href="#" onclick="func4()" class="button blue text-blanco text-shadow-negra">⓭</a> 
+<div id="otvet4"></div> 
+<br> 
+<br> 
+<br> 
+<br> 
+</body>
+</html>
